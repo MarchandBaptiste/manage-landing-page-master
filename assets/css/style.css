@@ -1,0 +1,61 @@
+/* Reset simple */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+header,
+section,
+footer {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  padding: 15px;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  padding: 8px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+:root {
+  --Orange-400: hsl(12, 88%, 59%);
+  --Blue-950: hsl(228, 39%, 23%);
+  --Gray-950: hsl(233, 12%, 13%);
+  --Orange-50: hsl(13, 100%, 96%);
+  --Gray-50: hsl(0, 0%, 98%);
+}
+
+/* style */
