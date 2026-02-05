@@ -30,9 +30,7 @@ Ce projet est une solution au challenge Manage Landing Page de Frontend Mentor. 
    Le champ email vérifie l'entrée utilisateur à l'aide d'une expression régulière (Regex). Si le format est invalide, la classe CSS du formulaire change pour afficher un message d'erreur rouge et changer la couleur de la bordure.
 
 ### Ce que j'ai appris
-Ce projet m'a forcé à mieux organiser mon CSS pour gérer les nombreux états (menu ouvert/fermé, slider, erreurs formulaire). J'ai aussi approfondi ma compréhension du positionnement relatif/absolu pour placer les éléments graphiques exactement comme sur la maquette Figma/JPG.
+Ce projet m'a forcé à mieux organiser mon CSS pour gérer les nombreux états (menu ouvert/fermé, slider, erreurs formulaire). J'ai aussi approfondi ma compréhension du positionnement relatif/absolu pour placer les éléments graphiques exactement comme sur la maquette JPG.
 
 ## Sources
 * Challenge & Assets : [Frontend Mentor](https://www.frontendmentor.io)
-* Tutoriel Slider : [CSS-Tricks - Building a Slider](https://css-tricks.com/slider-logic/)
-* Validation Email (Regex) : [MDN Web Docs - Form Validation](https://developer.mozilla.org/fr/docs/Learn/Forms/Form_validation)
