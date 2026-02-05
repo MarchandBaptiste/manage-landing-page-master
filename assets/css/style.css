@@ -11,6 +11,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
   color: var(--Blue-950);
+  background-color: var(--Gray-50);
 }
 
 a {
@@ -42,10 +43,7 @@ button {
   box-shadow: 2px 0px 10px var(--Orange-400);
   color: var();
 }
-/* seconde section */
-.second_section{
-  
-}
+
 /* première section */
 section:first-of-type article img{
     width: 100%;
@@ -60,6 +58,44 @@ section:first-of-type article h1 {
     font-weight: 700;
     padding-bottom: 0.6rem;
 }
+section:first-of-type article p{
+  padding-bottom: 2rem;
+}
+
+/* Manage */
+.manage h2{
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.manage .left p{
+  padding-bottom: 3.5rem;
+}
+.nb_title{
+  margin-bottom: 1rem;
+  background-color: var(--Orange-50);
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  padding: -0.5rem 0;
+  color: var(--Blue-950);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: -2rem;
+  padding-right: 2rem;
+}
+.nb_title span:first-of-type{
+  background-color: var(--Orange-400);
+  padding: 0.5rem 1.5rem;
+  border-radius: 40px;
+  color: var(--Gray-50);
+  flex-shrink: 0; /* Empêche le nombre de rétrécir */
+}
+.manage .right p {
+  text-align: left;
+  color: var(--Gray-950);
+}
 
 /* last article */
 .last_article {
@@ -73,18 +109,24 @@ section:first-of-type article h1 {
   align-items: center;
   background-image: url("../images/bg-simplify-section-mobile.svg");
   background-position: left center;
-  background-size: cover;
+  background-size: auto 100%;
   background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 .last_article p {
   font-weight: 500;
   font-size: 2.5rem;
+  position: relative;
+  z-index: 1;
 }
-.last_article button{
-    background-color: var(--Gray-50);
-    color: var(--Orange-400);
+.last_article button {
+  background-color: var(--Gray-50);
+  color: var(--Orange-400);
+  position: relative;
+  z-index: 1;
 }
-button{
+button {
   width: 50%;
 }
 
