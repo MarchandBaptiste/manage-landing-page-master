@@ -87,7 +87,7 @@
           </div>
         </article>
       </section>
-      <section>
+      <section class="second_section">
         <div>
           <h2>What they’ve said</h2>
           <article>
@@ -136,52 +136,57 @@
               being intrusive.”
             </p>
           </article>
-          <button>Get Started</button>
+          <button class="btn_orange">Get Started</button>
         </div>
 
-        <article>
+        <article class="last_article">
           <p>Simplify how your team works today.</p>
-          <span>Get Started</span>
+          <button>Get Started</button>
         </article>
       </section>
     </main>
     <footer>
-      <img src="./assets/images/logo.svg" alt="Logo Manage" />
-      <div>
-        <img src="./assets/images/icon-facebook.svg" alt="Facebook" />
-        <img src="./assets/images/icon-youtube.svg" alt="YouTube" />
+      <div class="content">
+
+        <img src="./assets/images/logo.svg" alt="Logo Manage" />
+        <div>
+          <img src="./assets/images/icon-facebook.svg" alt="Facebook" />
+          <img src="./assets/images/icon-youtube.svg" alt="YouTube" />
         <img src="./assets/images/icon-twitter.svg" alt="Twitter" />
         <img src="./assets/images/icon-pinterest.svg" alt="Pinterest" />
         <img src="./assets/images/icon-instagram.svg" alt="Instagram" />
       </div>
-
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Community</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-      </ul>
-
+      <div class="links">
+        <ul>
+          <div class="links_left">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+          </div>
+          <div class="links_right">
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </div>
+        </ul>
+      </div>
+      
       <form method="get" class="form-example">
         <div class="form-example">
-          <label for="name">Email updates</label>
+          <label for="updates"></label>
           <input
-            type="text"
-            name="name"
-            id="name"
-            required
-            placeholder="Updates in your inbox…"
+          type="text"
+          name="name"
+          id="name"
+          required
+          placeholder="Updates in your inbox…"
           />
         </div>
 
-        <div class="form-example">
-          <input type="submit" value="Go" />
-        </div>
+        <button>Get</button>
       </form>
-
+    </div>
       <p>Copyright 2020. All Rights Reserved</p>
     </footer>
   </body>
