@@ -46,6 +46,70 @@ button {
   box-shadow: 0px 12px 24px var(--Orange-400);
 }
 
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+  position: relative;
+}
+.menu {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 10%;
+  right: 0;
+  background-color: var(--Gray-50);
+  padding: 2rem;
+  box-shadow: 0 0px 40px rgba(3, 3, 3, 0.209);
+  z-index: 2;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.active {
+  display: block;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.menu ul li {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.menu ul li:hover{
+  color: var(--Orange-400);
+}
+.menu .btn_orange {
+  display: none;
+}
+.burger {
+  cursor: pointer;
+  z-index: 3;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+  z-index: 50;
+  pointer-events: none;
+}
+.overlay.active {
+  display: block;
+  z-index: 0;
+}
+
 /* première section */
 section:first-of-type article img {
   width: 100%;
@@ -127,6 +191,7 @@ section:first-of-type article p {
   padding: 0 2rem;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  transition: all 0.3s ease-in-out;
 }
 .second_section .slider::-webkit-scrollbar {
   display: none;
@@ -156,6 +221,7 @@ section:first-of-type article p {
   line-height: 1.6;
   font-size: 0.95rem;
 }
+/* dots */
 .slider-dots {
   display: flex;
   justify-content: center;
@@ -163,7 +229,6 @@ section:first-of-type article p {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
 .slider-dots span {
   width: 10px;
   height: 10px;
@@ -173,7 +238,6 @@ section:first-of-type article p {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .slider-dots span.active {
   background-color: var(--Orange-400);
 }
@@ -218,7 +282,6 @@ footer {
   padding: 3rem 2rem;
   color: var(--Gray-50);
 }
-
 footer .content {
   display: flex;
   flex-direction: column-reverse;
@@ -234,7 +297,6 @@ footer form {
   gap: 0.5rem;
   width: 100%;
 }
-
 footer input {
   flex: 1;
   padding: 1rem 1.5rem;
@@ -242,7 +304,6 @@ footer input {
   border: none;
   font-size: 0.95rem;
 }
-
 footer button {
   background-color: var(--Orange-400);
   color: white;
@@ -264,7 +325,6 @@ footer .links ul {
   padding: 0;
   margin: 0;
 }
-
 footer .links_left,
 footer .links_right {
   display: flex;
@@ -272,13 +332,11 @@ footer .links_right {
   gap: 1rem;
   text-align: left;
 }
-
 footer .links a {
   color: var(--Gray-50);
   text-decoration: none;
   font-size: 0.95rem;
 }
-
 footer .links a:hover {
   color: var(--Orange-400);
 }
@@ -289,7 +347,6 @@ footer .content > div:first-of-type {
   gap: 1rem;
   justify-content: center;
 }
-
 footer .content > div:first-of-type img {
   width: 30px;
   height: 30px;
