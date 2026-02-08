@@ -4,6 +4,9 @@ const articles = document.querySelectorAll(".slider article");
 const menu = document.querySelector(".menu");
 const hamberger = document.querySelector(".burger");
 const overlay = document.querySelector(".overlay");
+const form = document.querySelector(".form-example");
+const input = document.querySelector("#mail");
+const sendBtn = document.querySelector(".sendbtn");
 
 hamberger.addEventListener("click", () => {
   menu.classList.toggle("active");
@@ -40,3 +43,44 @@ dots.forEach((dot, index) => {
   });
 });
 updateDots();
+
+function showError(inputElement, message) {
+  inputElement.classList.add("error");
+  let errorMsg = inputElement.parentElement.querySelector(".error-message");
+  if (!errorMsg) {
+    errorMsg = document.createElement("span");
+    errorMsg.classList.add("error-message");
+    inputElement.parentElement.appendChild(errorMsg);
+  }
+  errorMsg.textContent = message;
+}
+function removeError(inputElement) {
+  inputElement.classList.remove("error");
+  const errorMsg = inputElement.parentElement.querySelector(".error-message");
+  if (errorMsg) {
+    errorMsg.remove();
+  }
+}
+function valid() {
+  let isValid = true;
+  const email = input.value.trim();
+  removeError(input);
+  if (!email) {
+    showError(input, "Please insert email");
+    isValid = false;
+    return isValid;
+  }
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    showError(input, "Please insert a valid email");
+    isValid = false;
+  }
+  return isValid;
+}
+sendBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (valid()) {
+    input.value = "";
+    removeError(input);
+  }
+});
