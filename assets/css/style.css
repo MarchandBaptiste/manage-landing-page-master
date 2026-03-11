@@ -187,6 +187,7 @@ section:first-of-type article p {
 }
 .second_section .slider {
   display: flex;
+  justify-content: center;
   gap: 2rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
